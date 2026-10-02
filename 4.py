@@ -1,0 +1,20 @@
+import pandas as pd
+Seriescapcntry=pd.Series(['new delhi','washington dc','london','paris'],index=['india','usa','uk','france'])
+print(Seriescapcntry)
+print()
+print('ACCESSING ELEMENTS USING:-')
+print('INDEXING')
+print(Seriescapcntry['india'])
+print()
+print(Seriescapcntry[[3,2]])
+print(Seriescapcntry[[2,3]])
+print(Seriescapcntry[['usa','france']])
+print()
+print('SLICING')
+print(Seriescapcntry['usa':'france'])
+print()
+print(Seriescapcntry[1:4])
+print()
+
+Seriescapcntry['france']='PARIS'
+print(Seriescapcntry)
